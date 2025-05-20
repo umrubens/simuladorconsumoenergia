@@ -18,3 +18,11 @@ Aplicação web simples para cálculo de consumo elétrico (kWh) e valor em reai
 sudo apt update
 sudo apt install python3 python3-pip python3-venv
 
+### 📦 1. Instale os pré-requisitos do sistema:
+### 🔁 2. Clone o repositório e crie um ambiente virtual:
+git clone URL_DO_SEU_REPO
+cd NOME_DO_REPO
+python3 -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
