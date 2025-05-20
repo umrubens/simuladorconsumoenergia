@@ -38,3 +38,28 @@ flask run --host=0.0.0.0
 docker build -t minha-app . --no-cache
 docker run -p 5000:5000 minha-app
 ```
+### 🌐 5. Acesse no navegador:
+```bash
+http://localhost:5000
+```
+
+
+### 🧩 Estrutura esperada do projeto:
+
+#seu-projeto/
+#├── app.py
+#├── calculos.py
+#├── requirements.txt
+#├── Dockerfile
+#└── templates/
+#    └── index.html
+
+### 🛠 Tecnologias utilizadas:
+Python 3
+Flask
+HTML5 + CSS3
+Docker (opcional)
+markdown
+Copiar
+Editar
+
