@@ -47,12 +47,12 @@ http://localhost:5000
 ### 🧩 Estrutura esperada do projeto:
 
 #seu-projeto/
-#├── app.py
-#├── calculos.py
-#├── requirements.txt
-#├── Dockerfile
-#└── templates/
-#    └── index.html
+├── app.py
+├── calculos.py
+├── requirements.txt
+├── Dockerfile
+└── templates/
+   └── index.html
 
 ### 🛠 Tecnologias utilizadas:
 Python 3
