@@ -1,0 +1,2 @@
+# simuladorconsumoenergia
+CALCULAR CONSUMO DE ENERGIA HORAS/REAIS
