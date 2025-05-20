@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Consumo</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
+        .calculadora { margin-bottom: 30px; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        h2 { color: #333; }
+        label { display: block; margin: 10px 0 5px; }
+        input { width: 100%; padding: 8px; margin-bottom: 10px; }
+        button { background: #4CAF50; color: white; border: none; padding: 10px 15px; cursor: pointer; }
+        button:hover { background: #45a049; }
+        .resultado { margin-top: 15px; padding: 10px; background: #f9f9f9; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Simulação de Consumo</h1>
+    
+    <div class="calculadora">
+        <h2>Calcular Consumo (kWh)</h2>
+        <label for="potencia">Potência (W):</label>
+        <input type="number" id="potencia" step="0.1">
+        
+        <label for="horas">Horas de uso por dia:</label>
+        <input type="number" id="horas" step="0.1">
+        
+        <label for="dias">Dias de uso no mês:</label>
+        <input type="number" id="dias" step="1">
+        
+        <button onclick="calcularConsumo()">Calcular Consumo</button>
+        
+        <div id="resultado-consumo" class="resultado" style="display: none;">
+            <strong>Consumo:</strong> <span id="consumo-kwh"></span> kWh
+        </div>
+    </div>
+    
+    <div class="calculadora">
+        <h2>Converter kWh em Reais</h2>
+        <label for="consumo">Consumo (kWh):</label>
+        <input type="number" id="consumo" step="0.1">
+        
+        <label for="tarifa">Tarifa (R$/kWh):</label>
+        <input type="number" id="tarifa" step="0.01">
+        
+        <button onclick="calcularValor()">Calcular Valor</button>
+        
+        <div id="resultado-valor" class="resultado" style="display: none;">
+            <strong>Valor a pagar:</strong> R$ <span id="valor-reais"></span>
+        </div>
+    </div>
+
+    <script>
+        async function calcularConsumo() {
+            const potencia = document.getElementById('potencia').value;
+            const horas = document.getElementById('horas').value;
+            const dias = document.getElementById('dias').value;
+            
+            const response = await fetch('/calcular-consumo', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ potencia, horas, dias })
+            });
+            
+            const data = await response.json();
+            
+            if (data.success) {
+                document.getElementById('consumo-kwh').textContent = data.consumo_kwh;
+                document.getElementById('resultado-consumo').style.display = 'block';
+            } else {
+                alert(data.message);
+            }
+        }
+        
+        async function calcularValor() {
+            const consumo = document.getElementById('consumo').value;
+            const tarifa = document.getElementById('tarifa').value;
+            
+            const response = await fetch('/calcular-valor', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ consumo, tarifa })
+            });
+            
+            const data = await response.json();
+            
+            if (data.success) {
+                document.getElementById('valor-reais').textContent = data.valor_reais;
+                document.getElementById('resultado-valor').style.display = 'block';
+            } else {
+                alert(data.message);
+            }
+        }
+    </script>
+</body>
+</html>

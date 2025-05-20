@@ -1,0 +1,6 @@
+# Dependências ESSENCIAIS (Flask + servidor WSGI para produção)
+flask==2.3.2
+gunicorn==20.1.0  # Remova esta linha se não for usar em produção
+
+# Gerenciamento de variáveis de ambiente (opcional)
+python-dotenv==1.0.0
