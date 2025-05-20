@@ -17,12 +17,24 @@ Aplicação web simples para cálculo de consumo elétrico (kWh) e valor em reai
 ```bash
 sudo apt update
 sudo apt install python3 python3-pip python3-venv
-
-### 📦 1. Instale os pré-requisitos do sistema:
+```
 ### 🔁 2. Clone o repositório e crie um ambiente virtual:
+```bash
 git clone URL_DO_SEU_REPO
 cd NOME_DO_REPO
 python3 -m venv venv
 source venv/bin/activate
-
+```
+📥 3. Instale as dependências do projeto:
+```bash
 pip install -r requirements.txt
+```
+▶️ 4. Execute a aplicação
+```bash
+flask run --host=0.0.0.0
+```
+### Para rodar via Docker:
+```bash
+docker build -t minha-app . --no-cache
+docker run -p 5000:5000 minha-app
+```
