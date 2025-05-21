@@ -10,40 +10,40 @@ Aplicação web simples para cálculo de consumo elétrico (kWh) e valor em reai
 
 ---
 
-## Debian/Linux
+### Debian/Linux
 
-### 1. Instale os pré-requisitos do sistema:
+## 1. Instale os pré-requisitos do sistema:
 
 ```bash
 sudo apt update
 sudo apt install python3 python3-pip python3-venv
 ```
-### 2. Clone o repositório e crie um ambiente virtual:
+## 2. Clone o repositório e crie um ambiente virtual:
 ```bash
 git clone URL_DO_SEU_REPO
 cd NOME_DO_REPO
 python3 -m venv venv
 source venv/bin/activate
 ```
-3. Instale as dependências do projeto:
+## 3. Instale as dependências do projeto:
 ```bash
 pip install -r requirements.txt
 ```
-4. Execute a aplicação
+## 4. Execute a aplicação
 ```bash
 flask run --host=0.0.0.0
 ```
-### Para rodar via Docker:
+## Para rodar via Docker:
 ```bash
 docker build -t minha-app . --no-cache
 docker run -p 5000:5000 minha-app
 ```
-### 5. Acesse no navegador:
+## 5. Acesse no navegador:
 ```bash
 http://localhost:5000
 ```
-### Estrutura esperada do projeto:
-```bash
+## Estrutura esperada do projeto:
+``bash
 #seu-projeto/
 ├── app.py
 ├── calculos.py
@@ -51,9 +51,9 @@ http://localhost:5000
 ├── Dockerfile
 └── templates/
    └── index.html
-```
-### Tecnologias utilizadas:
-```bash
+``
+## Tecnologias utilizadas:
+``bash
 Python 3
 Flask
 HTML5 + CSS3
@@ -61,4 +61,4 @@ Docker (opcional)
 markdown
 Copiar
 Editar
-```
+``
