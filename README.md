@@ -42,10 +42,8 @@ docker run -p 5000:5000 minha-app
 ```bash
 http://localhost:5000
 ```
-
-
 ### 🧩 Estrutura esperada do projeto:
-
+```bash
 #seu-projeto/
 ├── app.py
 ├── calculos.py
@@ -53,8 +51,9 @@ http://localhost:5000
 ├── Dockerfile
 └── templates/
    └── index.html
-
+```
 ### 🛠 Tecnologias utilizadas:
+```bash
 Python 3
 Flask
 HTML5 + CSS3
@@ -62,4 +61,4 @@ Docker (opcional)
 markdown
 Copiar
 Editar
-
+```
