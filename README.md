@@ -71,5 +71,3 @@ Editar
 
 ![pagina web](https://github.com/user-attachments/assets/49be71d0-aabf-4a98-8551-23847ae31ea1)
 
-
-### FIM.
