@@ -36,7 +36,7 @@ flask run --host=0.0.0.0
 ## Para rodar via Docker:
 ```bash
 docker build -t minha-app . --no-cache
-docker run -p 5000:5000 minha-app
+docker run -p 5000:5000 minha-app #Pode ser necessário usar "docker start minha-app" para iniciar o container.
 ```
 ## 5. Acesse no navegador:
 ```bash
