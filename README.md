@@ -8,11 +8,6 @@ Simulação de consumo de energia de um eletrodoméstico de forma simples. Usar 
 
 Agora, para transformar esse consumo em reais, você vai multiplica a quantidade de kWh pela tarifa de energia elétrica da sua região. Essa informação você pode consultar na sua conta de luz ou no site da empresa.
 
-
-# Calculadora Elétrica Web
-
-Aplicação web simples para cálculo de consumo elétrico (kWh) e valor em reais, utilizando Python e Flask. Inclui interface HTML interativa.
-
 ---
 
 ### Debian/Linux
