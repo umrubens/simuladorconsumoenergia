@@ -49,7 +49,7 @@ http://localhost:5000
 ├── app.py
 ├── calculos.py
 ├── requirements.txt
-├── Dockerfile
+├── Dockerfile (opcional)
 └── templates/
    └── index.html
 ```
