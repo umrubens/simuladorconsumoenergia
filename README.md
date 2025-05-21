@@ -36,14 +36,15 @@ flask run --host=0.0.0.0
 ## Para rodar via Docker:
 ```bash
 docker build -t minha-app . --no-cache
-docker run -p 5000:5000 minha-app #Pode ser necessário usar "docker start minha-app" para iniciar o container.
+docker run -p 5000:5000 minha-app
+#Pode ser necessário usar "docker start --nome" para iniciar o container.
 ```
 ## 5. Acesse no navegador:
 ```bash
 http://localhost:5000
 ```
 ## Estrutura esperada do projeto:
-``bash
+`bash
 #seu-projeto/
 ├── app.py
 ├── calculos.py
@@ -51,7 +52,7 @@ http://localhost:5000
 ├── Dockerfile
 └── templates/
    └── index.html
-``
+`
 ## Tecnologias utilizadas:
 ``bash
 Python 3
