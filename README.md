@@ -1,9 +1,10 @@
 # SIMULADOR DE CONSUMO DE ENERGIA 
 
-CALCULAR CONSUMO DE ENERGIA HORAS E CONVERTE PARA REAIS
+CALCULAR CONSUMO DE ENERGIA EM HORAS E CONVERTE PARA REAIS
 
 Simulação de consumo de energia de um eletrodoméstico de forma simples. Usar a seguinte fórmula: Consumo (kWh) = Potência (W) x Tempo de Uso (h) / 1000. É basicamente multiplicar a potência em watts pelo tempo de uso em horas e dividir o resultado por 1000 para obter o consumo em kWh.
-#
+
+
 Agora, para transformar esse consumo em reais, você vai multiplica a quantidade de kWh pela tarifa de energia elétrica da sua região. Essa informação você pode consultar na sua conta de luz ou no site da empresa.
 
 
