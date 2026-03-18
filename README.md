@@ -45,7 +45,7 @@ http://localhost:5000
 ```
 ## Estrutura esperada do projeto:
 ```bash
-#seu-projeto/
+#projeto/
 ├── app.py
 ├── calculos.py
 ├── requirements.txt
@@ -60,8 +60,6 @@ Flask
 HTML5 + CSS3
 Docker (opcional)
 markdown
-Copiar
-Editar
 ```
 
 ![pagina web](https://github.com/user-attachments/assets/49be71d0-aabf-4a98-8551-23847ae31ea1)
