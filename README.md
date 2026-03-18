@@ -29,7 +29,7 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
-## 4. Execute a aplicação (Se preferir ignorar esse passo e vá para o proximo)
+## 4. Execute a aplicação (Se preferir, ignore esse passo e vá para o próximo.)
 ```bash
 flask run --host=0.0.0.0
 ```
