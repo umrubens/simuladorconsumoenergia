@@ -3,16 +3,16 @@
 CALCULAR CONSUMO DE ENERGIA EM HORAS E CONVERTER PARA REAIS
 
 
-Simulação de consumo de energia de um eletrodoméstico de forma simples. Usar a seguinte fórmula: Consumo (kWh) = Potência (W) x Tempo de Uso (h) / 1000. É basicamente multiplicar a potência em watts pelo tempo de uso em horas e dividir o resultado por 1000 para obter o consumo em kWh.
+Simulação de consumo de energia de uma forma simples. Usar a seguinte fórmula: Consumo (kWh) = Potência (W) x Tempo de Uso (h) / 1000. Basicamente multiplicar a potência em watts pelo tempo de uso em horas e dividir o resultado por 1000 para obter o consumo em kWh.
 
 
-Agora, para transformar esse consumo em reais, você vai multiplica a quantidade de kWh pela tarifa de energia elétrica da sua região. Essa informação você pode consultar na sua conta de luz ou no site da empresa.
+Para transformar esse consumo em reais, você vai multiplica a quantidade de kWh pela tarifa de energia elétrica da sua região.
 
 ---
 
 ### Debian/Linux
 
-## 1. Instale os pré-requisitos do sistema:
+## 1. Instale pré-requisitos do sistema:
 
 ```bash
 sudo apt update
@@ -20,8 +20,8 @@ sudo apt install python3 python3-pip python3-venv
 ```
 ## 2. Clone o repositório e crie um ambiente virtual:
 ```bash
-git clone URL_DO_SEU_REPO
-cd NOME_DO_REPO
+git clone url
+cd simuladorconsumoenergia
 python3 -m venv venv
 source venv/bin/activate
 ```
@@ -43,7 +43,7 @@ docker run -d -p 5000:5000 minha-app
 ```bash
 http://localhost:5000
 ```
-## Estrutura esperada do projeto:
+## Estrutura do projeto:
 ```bash
 #projeto/
 ├── app.py
@@ -53,7 +53,7 @@ http://localhost:5000
 └── templates/
    └── index.html
 ```
-## Tecnologias utilizadas:
+## Utilizado:
 ```bash
 Python 3
 Flask
